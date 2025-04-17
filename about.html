@@ -1,0 +1,168 @@
+<!-- adapted this code from ChatGPT and Bootstrap documentation -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Sam's Hounds</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      background-image: url('https://images.pexels.com/photos/1107717/pexels-photo-1107717.jpeg?cs=srgb&dl=pexels-fotios-photos-1107717.jpg&fm=jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.88);
+      padding: 2rem;
+      border-radius: 12px;
+    }
+
+    .quote {
+      font-style: italic;
+      font-size: 1.2rem;
+    }
+
+    .quote-footer {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Sam's Hounds</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="dogs.html">Dogs</a></li>
+          <li class="nav-item"><a class="nav-link" href="foster.html">Foster</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="donate.html">Donate</a></li>
+          <li class="nav-item"><a class="nav-link" href="join.html">Join</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="bg-info text-white text-center py-4">
+    <div class="container">
+      <h1>About Sam's Hounds</h1>
+      <p class="lead">Where compassion meets paws.</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container my-5 overlay">
+
+    <!-- Centered Dog Image -->
+<!-- Dog Image Row -->
+<div class="text-center mb-5">
+    <div class="d-flex justify-content-center gap-5 flex-wrap">
+      
+      <!-- Dog 1 -->
+      <img 
+        src="https://external-preview.redd.it/ifzw1GOwA1wdJ8o5nlL5_DVcDvvmir_jzbWiD3fP410.jpg?auto=webp&s=7443dc7d346f5a9a3f2a0f969278a7e258b1d3bb" 
+        alt="Dog 1" 
+        class="rounded-circle shadow" 
+        style="width: 180px; height: 180px; object-fit: cover;" />
+  
+      <!-- Dog 2 -->
+      <img 
+        src="https://i.pinimg.com/564x/ec/95/b5/ec95b550f9543f0e0fe3f8272fba475b.jpg" 
+        alt="Dog 2" 
+        class="rounded-circle shadow" 
+        style="width: 180px; height: 180px; object-fit: cover;" />
+  
+      <!-- Dog 3 -->
+      <img 
+        src="https://captainzack.in/cdn/shop/articles/apple-1-1024x634.png?v=1712909699" 
+        alt="Dog 3" 
+        class="rounded-circle shadow" 
+        style="width: 180px; height: 180px; object-fit: cover;" />
+  
+    </div>
+  </div>
+  
+  
+    <!-- Our Story -->
+    <div class="bg-white bg-opacity-75 rounded p-4 mb-4 shadow-sm">
+      <h2 class="text-center mb-3">Our Story</h2>
+      <p>
+        Sam’s Hounds was born out of a deep love for animals and a simple yet powerful belief: every dog deserves a chance
+        to feel safe, loved, and at home. What started as a one-person effort in Georgetown quickly blossomed into a full-scale
+        community initiative powered by passionate fosters, volunteers, and adopters who believe in second chances.
+      </p>
+      <p>
+        Over the years, we've rescued dogs from overcrowded shelters, unsafe conditions, and emergency situations.
+        From energetic puppies to aging seniors, each dog is cared for like family until they find the right forever match.
+        Along the way, we’ve built partnerships with vets, schools, and other rescue orgs to make our reach even stronger.
+      </p>
+      <p>
+        Whether it's nursing a neglected pup back to health or celebrating a joyful adoption day, our journey is powered by
+        the people who care enough to step up — and the dogs who inspire us every day.
+      </p>
+    </div>
+  
+    <!-- Our Mission -->
+    <div class="bg-white bg-opacity-75 rounded p-4 mb-4 shadow-sm">
+      <h2 class="text-center mb-3">Our Mission</h2>
+      <p>
+        At Sam’s Hounds, our mission is to rescue, rehabilitate, and rehome dogs in need — with compassion at the core of everything we do.
+        We are committed to transparency, education, and ethical treatment of animals at every stage of the rescue process.
+      </p>
+      <p>
+        We work to empower families through resources and guidance, ensuring that every adoption is a good fit — for both the dog and the home.
+        Beyond rescue, we also advocate for responsible pet ownership, community awareness, and support systems for fosters and volunteers.
+      </p>
+    </div>
+  
+    <!-- Quote -->
+    <div class="text-center mt-5">
+      <blockquote class="blockquote">
+        <p class="fs-4 fw-semibold">
+          "Saving one dog won't change the world, but surely for that one dog, the world will change forever."
+        </p>
+        <footer class="blockquote-footer mt-2">Sam's Hounds</footer>
+      </blockquote>
+    </div>
+  </main>
+  
+
+  <!-- Footer -->
+  <footer class="bg-light text-center py-4 mt-auto">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Sam’s Hounds. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

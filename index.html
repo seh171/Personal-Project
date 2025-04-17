@@ -1,0 +1,158 @@
+<!-- adapted this code from ChatGPT and Bootstrap documentation -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sam's Hounds</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* Background image and overlay effect */
+    body {
+      background-image: url('https://www.travelandleisure.com/thmb/k8XtvMdZYniqxtQYS--CisfbIp0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/TAL-header-wildflowers-crested-butte-colorado-COFLOWERS0424-a35f8aa3de75417ca1a98417835c2a58.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 2rem;
+      border-radius: 10px;
+    }
+
+    .testimonial-card {
+      background: white;
+      border-left: 4px solid #198754;
+      padding: 1.5rem;
+      border-radius: 10px;
+      margin-bottom: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Sam's Hounds</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="dogs.html">Dogs</a></li>
+          <li class="nav-item"><a class="nav-link" href="foster.html">Foster</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="donate.html">Donate</a></li>
+          <li class="nav-item"><a class="nav-link" href="join.html">Join</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Carousel Section -->
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner text-white text-center" style="background-color: #007bff;">
+      <div class="carousel-item active py-5">
+        <h1 class="display-5">Welcome to Sam’s Hounds</h1>
+        <p class="lead">Find your new best friend, foster a pup, or support our mission.</p>
+      </div>
+      <div class="carousel-item py-5">
+        <h1 class="display-5">Over 150 Dogs Rehomed</h1>
+        <p class="lead">Join our community of adopters and fosters changing lives.</p>
+      </div>
+      <div class="carousel-item py-5">
+        <h1 class="display-5">Volunteer. Foster. Donate.</h1>
+        <p class="lead">Every action makes a tail wag. Get involved today!</p>
+      </div>
+    </div>
+
+    <!-- Carousel controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- Main Content Overlay -->
+  <main class="container my-5 overlay">
+    
+    <!-- Get Started -->
+    <section class="text-center mb-5">
+      <h2 class="mb-5">Get Started</h2>
+      <p class="mb-4 fs-5">Browse our dogs, learn about fostering, or find ways to help out!</p>
+      <a href="dogs.html" class="btn btn-success btn-lg">See Our Dogs</a>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="mb-3">
+      <h2 class="text-center mb-4">What People Are Saying</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="testimonial-card shadow-sm">
+            <p class="fs-5">“Adopting from Sam’s Hounds was the best decision I’ve ever made. Luna is the perfect addition to our family!”</p>
+            <footer class="blockquote-footer">Alex R., Dog Parent</footer>
+          </div>
+          <div class="testimonial-card shadow-sm">
+            <p class="fs-5">“Fostering with this group has been so fulfilling. They make the whole process easy and supportive.”</p>
+            <footer class="blockquote-footer">Mia J., Volunteer</footer>
+          </div>
+          <div class="testimonial-card shadow-sm">
+            <p class="fs-5">“I was skeptical at first, but the team made me feel confident and safe adopting our first rescue pup.”</p>
+            <footer class="blockquote-footer">Jordan S., New Adopter</footer>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Impact -->
+    <section class="text-center mb-5">
+      <h2 class="mb-3">Our Impact</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <h3 class="text-primary display-6">150+</h3>
+          <p class="fs-5">Dogs rescued and rehomed</p>
+        </div>
+        <div class="col-md-4">
+          <h3 class="text-primary display-6">75+</h3>
+          <p class="fs-5">Active foster families</p>
+        </div>
+        <div class="col-md-4">
+          <h3 class="text-primary display-6">2000+</h3>
+          <p class="fs-5">Volunteer hours donated</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why We Do This -->
+    <section class="text-center">
+      <h2 class="mb-3">Why We Do This</h2>
+      <p class="fs-5">Every tail wag is a reminder that rescue matters. With your help, we can give every dog a second chance at love and happiness.</p>
+      <blockquote class="blockquote mt-4">
+        <p class="mb-1">"Saving one dog won't change the world, but surely for that one dog, the world will change forever."</p>
+        <footer class="blockquote-footer mt-2">Sam's Hounds</footer>
+      </blockquote>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-light text-center py-4">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Sam’s Hounds. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

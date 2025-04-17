@@ -1,0 +1,289 @@
+<!-- adapted this code from ChatGPT and Bootstrap documentation -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Available Dogs | Sam's Hounds</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    body {
+      background-image: url('https://img.freepik.com/free-vector/realistic-blue-sky-background_1048-6707.jpg?semt=ais_hybrid&w=740');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+  
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 2rem;
+      border-radius: 10px;
+    }
+  
+    .card {
+      border-radius: 1rem;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+  
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 20px rgba(33, 37, 41, 0.2);
+      z-index: 2;
+    }
+  
+    .card img {
+      object-fit: cover;
+      height: 250px;
+    }
+  
+    .card-body {
+      text-align: center;
+    }
+  
+    .card-title {
+      font-weight: 600;
+      font-size: 1.25rem;
+    }
+  
+    .card-text {
+      font-size: 0.95rem;
+      color: #555;
+    }
+  </style>   
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Sam's Hounds</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="dogs.html">Dogs</a></li>
+          <li class="nav-item"><a class="nav-link" href="foster.html">Foster</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="donate.html">Donate</a></li>
+          <li class="nav-item"><a class="nav-link" href="join.html">Join</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="bg-info text-white text-center py-4">
+    <div class="container">
+      <h1>Meet Our Dogs</h1>
+      <p class="lead">Each one is ready to bring love and joy into your life.</p>
+    </div>
+  </header>
+
+  <!-- Dog Grid -->
+  <main class="container my-5 overlay">
+    <div class="row g-4">
+
+      <!-- 1 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <img src="https://www.bil-jac.com/wp-content/uploads/2024/12/beagle2-184102750.webp" class="card-img-top" alt="Winston">
+          <div class="card-body">
+            <h5 class="card-title">Winston</h5>
+            <p class="card-text">Energetic and sweet — loves long walks and cheese.</p>
+            <a href="contact.html" class="btn btn-outline-primary">Adopt Me</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <img src="https://www.akc.org/wp-content/uploads/2017/11/Pembroke-Welsh-Corgi-standing-outdoors-in-the-fall.jpg" class="card-img-top" alt="Maximus IV">
+          <div class="card-body">
+            <h5 class="card-title">Maximus IV</h5>
+            <p class="card-text">Goofy boy with a heart of gold and a wagging tail.</p>
+            <a href="contact.html" class="btn btn-outline-primary">Adopt Me</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <img src="https://placedog.net/500?id=3" class="card-img-top" alt="Milkshake">
+          <div class="card-body">
+            <h5 class="card-title">Milkshake</h5>
+            <p class="card-text">Loves quiet evenings and gentle belly rubs.</p>
+            <a href="contact.html" class="btn btn-outline-primary">Adopt Me</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <img src="https://www.wylanbriar.com/wp-content/uploads/2010/09/showline1.jpg" class="card-img-top" alt="Charles Barkley Jr.">
+          <div class="card-body">
+            <h5 class="card-title">Charles Barkley Jr.</h5>
+            <p class="card-text">Smart, silly, and a master of head tilts.</p>
+            <a href="contact.html" class="btn btn-outline-primary">Adopt Me</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <img src="https://placedog.net/500?id=5" class="card-img-top" alt="Skittle">
+          <div class="card-body">
+            <h5 class="card-title">Skittle</h5>
+            <p class="card-text">Shy at first, but fiercely loyal and sweet.</p>
+            <a href="contact.html" class="btn btn-outline-primary">Adopt Me</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <img src="https://placedog.net/500?id=6" class="card-img-top" alt="Rocky">
+          <div class="card-body">
+            <h5 class="card-title">Rocky</h5>
+            <p class="card-text">Loves playing fetch and chasing squirrels (gently!).</p>
+            <a href="contact.html" class="btn btn-outline-primary">Adopt Me</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <img src="https://placedog.net/500?id=7" class="card-img-top" alt="Daisy & Tulip">
+          <div class="card-body">
+            <h5 class="card-title">Daisy & Tulip (package deal)</h5>
+            <p class="card-text">Full of sunshine and tail wags.</p>
+            <a href="contact.html" class="btn btn-outline-primary">Adopt Me</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <img src="https://placedog.net/500?id=8" class="card-img-top" alt="Mini Cooper">
+          <div class="card-body">
+            <h5 class="card-title">Mini Cooper</h5>
+            <p class="card-text">The ultimate cuddle buddy and snack thief.</p>
+            <a href="contact.html" class="btn btn-outline-primary">Adopt Me</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <img src="https://placedog.net/500?id=9" class="card-img-top" alt="Kibble">
+          <div class="card-body">
+            <h5 class="card-title">Kibble</h5>
+            <p class="card-text">Elegant, calm, and full of soulful stares.</p>
+            <a href="contact.html" class="btn btn-outline-primary">Adopt Me</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 10 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <img src="https://placedog.net/500?id=10" class="card-img-top" alt="Buddy">
+          <div class="card-body">
+            <h5 class="card-title">Buddy</h5>
+            <p class="card-text">Your new shadow — loves attention and walks.</p>
+            <a href="contact.html" class="btn btn-outline-primary">Adopt Me</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 11 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <img src="https://149352953.v2.pressablecdn.com/wp-content/uploads/2014/08/dog-balancing.jpg" class="card-img-top" alt="Milo">
+          <div class="card-body">
+            <h5 class="card-title">Milo</h5>
+            <p class="card-text">Adventurous spirit with a nose for treats.</p>
+            <a href="contact.html" class="btn btn-outline-primary">Adopt Me</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 12 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <img src="https://placedog.net/500?id=12" class="card-img-top" alt="Nugget">
+          <div class="card-body">
+            <h5 class="card-title">Nugget</h5>
+            <p class="card-text">Loves sunbeams, soft beds, and gentle hugs.</p>
+            <a href="contact.html" class="btn btn-outline-primary">Adopt Me</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 13 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <img src="https://placedog.net/500?id=13" class="card-img-top" alt="Sir Washington">
+          <div class="card-body">
+            <h5 class="card-title">Sir Washington</h5>
+            <p class="card-text">The goodest boy — crate trained and polite!</p>
+            <a href="contact.html" class="btn btn-outline-primary">Adopt Me</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 14 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <img src="https://placedog.net/500?id=14" class="card-img-top" alt="Finn">
+          <div class="card-body">
+            <h5 class="card-title">Finn</h5>
+            <p class="card-text">Young and curious — ready to explore the world!</p>
+            <a href="contact.html" class="btn btn-outline-primary">Adopt Me</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 15 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <img src="https://placedog.net/500?id=15" class="card-img-top" alt="Blue">
+          <div class="card-body">
+            <h5 class="card-title">Blue</h5>
+            <p class="card-text">Quiet, affectionate, and fully house-trained.</p>
+            <a href="contact.html" class="btn btn-outline-primary">Adopt Me</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-light text-center py-4">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Sam’s Hounds. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
